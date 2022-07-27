@@ -43,7 +43,7 @@ class HesapAdminAppScreen extends StatelessWidget {
       // }),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Admin Paneli',
+        title: 'Hesap Owner Interface',
         theme: ThemeData.dark().copyWith(
           scaffoldBackgroundColor: AppColors.primary,
           textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme)
