@@ -13,7 +13,7 @@ Future<void> main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-  runApp(MyApp());
+  runApp(MyApp()); // TODO: admin yazisi cikiyor site acilirken, sonra normal title'a geciyor. Bunu duzelt
 }
 
 class MyApp extends StatelessWidget {

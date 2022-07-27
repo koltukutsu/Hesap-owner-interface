@@ -9,10 +9,17 @@ class PressableTableArea extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: AppColors.white,
-      width: MediaQuery.of(context).size.width * 0.7,
-      height: MediaQuery.of(context).size.height * 0.8,
+    return Material(
+      elevation: 10,
+      borderRadius: const BorderRadius.all(Radius.circular(10)),
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: const BorderRadius.all(Radius.circular(10)),
+          color: AppColors.white,
+        ),
+        width: MediaQuery.of(context).size.width * 0.7,
+        height: MediaQuery.of(context).size.height * 0.8,
+      ),
     );
   }
 }
